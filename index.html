@@ -1,126 +1,37 @@
-
 <!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="한결주택관리 - 정왕동 원룸·다가구주택 건물관리">
-<title>한결주택관리 | 건물관리·시설관리</title>
+<meta name="description" content="한결주택관리 - 다가구·원룸 임대관리와 건물 현장관리">
+<title>한결주택관리 | 믿고 맡기는 주택관리</title>
 <style>
-:root{--ink:#172b2a;--muted:#62716e;--green:#173b36;--green2:#2f6558;--lime:#d8e7c7;--paper:#f7f8f4;--line:#e0e7df}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,"Malgun Gothic",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
-header{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
-.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-weight:900;font-size:22px;color:var(--green)}
-.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted)}
-.navlinks{display:flex;gap:22px;font-size:14px}
-.hero{padding:75px 0;background:radial-gradient(circle at 85% 18%,#e3ecd9 0,transparent 30%),linear-gradient(135deg,#f7f8f4,#eef3eb)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
-.eyebrow{font-size:13px;font-weight:800;color:var(--green2);letter-spacing:2px}
-h1{font-size:clamp(35px,5vw,58px);line-height:1.2;letter-spacing:-2px;margin:18px 0}
-h1 span{color:var(--green2)}
-.hero p{font-size:17px;color:#52625d}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:9px;font-weight:750}
-.primary{background:var(--green);color:white}
-.secondary{border:1px solid #bdccc2;background:white;color:var(--green)}
-.hero-card{background:var(--green);border-radius:22px;padding:28px;color:white;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 45px #173b3618}
-.hero-card .label{color:#c9ddc6;font-size:12px;letter-spacing:2px;font-weight:800}
-.hero-card h2{font-size:27px;line-height:1.4}
-.hero-card p{color:#d9e5dc;font-size:14px}
-.house-icon{text-align:center;font-size:100px;color:var(--lime);line-height:1.3}
-section{padding:70px 0}
-.section-head{max-width:660px;margin-bottom:30px}
-.section-head h2{font-size:clamp(28px,3.5vw,38px);line-height:1.3;letter-spacing:-1px}
-.section-head p{color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:white;border:1px solid var(--line);border-radius:15px;padding:24px}
-.num{width:40px;height:40px;border-radius:12px;background:#eaf1e4;color:var(--green2);display:grid;place-items:center;font-weight:850}
-.card h3{margin:17px 0 8px;font-size:19px}
-.card p{margin:0;color:var(--muted);font-size:14px}
-.band{background:#edf2e9}
-.two-col{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
-.promise{background:white;border:1px solid var(--line);border-radius:16px;padding:26px}
-.checklist{list-style:none;padding:0}
-.checklist li{padding:12px 0;border-bottom:1px solid var(--line)}
-.check{color:var(--green2);font-weight:900;margin-right:8px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.step{padding:22px 0;border-top:2px solid var(--green2)}
-.step p{color:var(--muted);font-size:14px}
-.contact{background:var(--green);color:white;padding:60px 0}
-.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:30px}
-.contact h2{font-size:clamp(28px,4vw,40px);line-height:1.3}
-.contact p{color:#d3e0d8}
-.contact .btn{background:var(--lime);color:var(--green);white-space:nowrap}
-.smallprint{font-size:12px;color:#c5d5cb;margin-top:18px}
-footer{padding:25px 0;background:#102d29;color:#c6d5cd;font-size:12px}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.notice{font-size:12px;color:#8a9690;margin-top:18px}
-@media(max-width:760px){
-.nav{min-height:64px}.navlinks{gap:10px;font-size:12px}
-.hero{padding:48px 0}.hero-grid,.two-col{grid-template-columns:1fr;gap:24px}
-.hero-card{min-height:250px}.cards,.steps{grid-template-columns:1fr}
-section{padding:50px 0}.contact-grid{align-items:flex-start;flex-direction:column}
-.wrap{width:calc(100% - 32px)}
-}
+:root{--gold:#d8b24c;--gold-dark:#b58c25;--ink:#30343a;--muted:#68717b;--cream:#fbf9f3;--line:#e8e4da;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,'Malgun Gothic','맑은 고딕',sans-serif;color:var(--ink);line-height:1.65;background:#fff}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;font-size:23px;letter-spacing:-1px}.brand span{color:var(--gold-dark)}.navlinks{display:flex;gap:26px;font-size:14px;color:#51565d}.navcall{background:var(--gold);padding:11px 17px;border-radius:7px;font-weight:800;font-size:14px}
+.hero{background:linear-gradient(90deg,rgba(27,31,35,.78),rgba(27,31,35,.18)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:510px;display:flex;align-items:center;color:#fff}.hero-content{padding:76px 0;max-width:650px}.eyebrow{color:#f1d681;font-weight:800;letter-spacing:2px;font-size:13px}.hero h1{font-size:clamp(34px,5vw,54px);line-height:1.22;letter-spacing:-1.8px;margin:14px 0 18px}.hero p{font-size:17px;color:#f4f4f4;max-width:540px;margin:0 0 28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:7px;font-weight:800;gap:8px}.btn-gold{background:var(--gold);color:#252525}.btn-outline{border:1px solid rgba(255,255,255,.75);color:#fff;margin-left:8px}
+.trustbar{background:var(--cream);border-bottom:1px solid var(--line)}.trustrow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:22px 0}.trustrow div{font-size:14px;font-weight:700;text-align:center}.trustrow strong{color:var(--gold-dark);margin-right:8px}
+section{padding:82px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.kicker{color:var(--gold-dark);font-weight:900;font-size:12px;letter-spacing:2px}.section-head h2{font-size:clamp(27px,3vw,36px);letter-spacing:-1px;line-height:1.3;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(30,30,30,.045)}.card img{width:100%;height:205px;object-fit:cover;display:block}.card-body{padding:23px}.card .num{color:var(--gold-dark);font-size:12px;font-weight:900;letter-spacing:1px}.card h3{margin:5px 0 8px;font-size:20px}.card p{margin:0;color:var(--muted);font-size:14px}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.about-photo{width:100%;height:390px;object-fit:cover;border-radius:12px}.about h2{font-size:34px;line-height:1.35;letter-spacing:-1px;margin:8px 0 18px}.about p{color:var(--muted)}.checks{list-style:none;padding:0;margin:22px 0}.checks li{margin:10px 0;font-weight:700}.checks li:before{content:'✓';display:inline-grid;place-items:center;width:23px;height:23px;background:#f3e8c7;color:#7e6118;border-radius:50%;margin-right:10px;font-size:13px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:23px 18px;border:1px solid var(--line);border-radius:10px}.step b{display:block;color:var(--gold-dark);font-size:13px;letter-spacing:1px}.step h3{font-size:17px;margin:8px 0}.step p{font-size:13px;color:var(--muted);margin:0}
+.contact{background:#30343a;color:#fff;padding:64px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font-size:clamp(26px,3vw,35px);line-height:1.3;margin:8px 0}.contact p{color:#d7d9dc;margin:0}.phone{font-size:clamp(25px,3vw,34px);font-weight:900;white-space:nowrap;color:#f0d27a}.contact .eyebrow{color:#f0d27a}
+footer{padding:24px 0;color:#7b8086;font-size:12px;border-top:1px solid #484b50;background:#30343a}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.nav{height:66px}.navlinks{display:none}.brand{font-size:20px}.hero{min-height:470px;background-position:58% center}.hero-content{padding:65px 0}.hero p{font-size:15px}.btn{padding:12px 15px}.trustrow{grid-template-columns:1fr;gap:8px;padding:17px 0}.trustrow div{text-align:left}.cards{grid-template-columns:1fr}.card img{height:220px}section{padding:60px 0}.about-grid{grid-template-columns:1fr;gap:26px}.about-photo{height:260px}.about h2{font-size:29px}.process{grid-template-columns:1fr 1fr}.contact-inner{display:block}.phone{margin-top:22px}.contact .btn{margin-top:16px;margin-left:0}}
+@media(max-width:420px){.process{grid-template-columns:1fr}.btn-outline{margin-left:4px}.hero h1{font-size:34px}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#top">한결주택관리<small>HANGYEOL HOUSING MANAGEMENT</small></a>
-<nav class="navlinks" aria-label="주요 메뉴">
-<a href="#services">관리 서비스</a><a href="#process">진행 방식</a><a href="#contact">상담 문의</a>
-</nav>
-</div></header>
+<header><div class="wrap nav"><a class="brand" href="#top">한결<span>주택관리</span></a><nav class="navlinks"><a href="#services">관리 서비스</a><a href="#about">한결의 약속</a><a href="#process">관리 절차</a></nav><a class="navcall" href="tel:01051895554">전화 상담</a></div></header>
 <main id="top">
-<section class="hero"><div class="wrap hero-grid">
-<div>
-<div class="eyebrow">ONE-ROOM · MULTI-FAMILY · BUILDING CARE</div>
-<h1>건물의 작은 문제도<br><span>믿고 맡길 수 있게.</span></h1>
-<p>원룸·다가구주택 건물주를 위한 현장 중심 관리 서비스.<br>공용부 환경관리부터 퇴실 점검, 생활 속 간단한 시설 점검까지 꼼꼼하게 살펴봅니다.</p>
-<div class="actions"><a class="btn primary" href="#contact">관리 상담하기 ↗</a><a class="btn secondary" href="#services">서비스 알아보기</a></div>
-<p class="notice">※ 실제 제공 가능한 서비스와 작업 범위는 현장 및 관련 자격·법령 요건에 따라 협의합니다.</p>
-</div>
-<div class="hero-card">
-<div><div class="label">HANGYEOL HOUSING MANAGEMENT</div><h2>건물주는 안심하고,<br>건물은 깔끔하게.</h2><p>정기적인 확인과 필요한 조치로 건물 관리의 부담을 덜어드립니다.</p></div>
-<div class="house-icon" aria-label="건물 아이콘">⌂</div>
-</div>
-</div></section>
-<section id="services"><div class="wrap">
-<div class="section-head"><div class="eyebrow">WHAT WE DO</div><h2>건물 관리에 필요한 일을<br>현장에 맞게 살핍니다.</h2><p>건물 상태와 요청 사항을 확인한 뒤, 작업 범위와 비용을 사전에 협의합니다.</p></div>
-<div class="cards">
-<article class="card"><div class="num">01</div><h3>공용부·외부 환경관리</h3><p>건물 주변 정리, 잡초 제거, 화단 정돈, 자갈 포장 등 깔끔한 외부 환경 유지를 돕습니다.</p></article>
-<article class="card"><div class="num">02</div><h3>퇴실 점검·현장 확인</h3><p>퇴실 시 눈에 보이는 시설 상태와 정리할 부분을 확인하고, 필요한 조치 사항을 안내합니다.</p></article>
-<article class="card"><div class="num">03</div><h3>간단한 시설 점검·수리</h3><p>현장 확인 후 가능한 범위의 간단한 수리를 진행하고, 전문 업체가 필요한 문제는 별도 협의합니다.</p></article>
+<section class="hero"><div class="wrap hero-content"><div class="eyebrow">HANGYEOL HOUSING MANAGEMENT</div><h1>건물 관리는 꼼꼼하게,<br>임대인의 마음은 편안하게.</h1><p>다가구주택과 원룸의 임대관리부터 공용부 점검까지. 현장을 살피고 필요한 일을 책임감 있게 챙기는 한결주택관리입니다.</p><a class="btn btn-gold" href="tel:01051895554">☎ 010-5189-5554</a><a class="btn btn-outline" href="#services">서비스 알아보기</a></div></section>
+<div class="trustbar"><div class="wrap trustrow"><div><strong>01</strong> 현장 중심 관리</div><div><strong>02</strong> 꼼꼼한 확인과 공유</div><div><strong>03</strong> 임대인 맞춤 관리</div></div></div>
+<section id="services"><div class="wrap"><div class="section-head"><div class="kicker">OUR SERVICES</div><h2>건물에 필요한 관리를 한결같이</h2><p>건물 상황과 임대인의 필요에 맞춰 실무 중심으로 관리합니다.</p></div><div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80" alt="다가구 주택 외관"><div class="card-body"><div class="num">SERVICE 01</div><h3>임대·현장 관리</h3><p>입주 및 퇴실 관련 확인, 임대 현장 대응, 임대인이 필요한 관리 업무를 지원합니다.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="건물 내부 청소와 관리"><div class="card-body"><div class="num">SERVICE 02</div><h3>공용부·외부 관리</h3><p>계단과 복도 등 공용 공간 상태를 살피고, 건물의 청결과 기본적인 관리 상태를 확인합니다.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80" alt="시설 점검 작업"><div class="card-body"><div class="num">SERVICE 03</div><h3>퇴실·시설 점검</h3><p>퇴실 시 주요 상태를 확인하고, 간단한 시설 이상 점검 및 수리 필요 사항을 안내합니다.</p></div></article>
 </div></div></section>
-<section class="band"><div class="wrap two-col">
-<div class="section-head"><div class="eyebrow">WHY HANGYEOL</div><h2>한 번의 작업보다<br>꾸준한 관리가 중요합니다.</h2><p>건물마다 필요한 관리가 다릅니다. 무조건적인 작업보다 현재 상태와 우선순위를 확인하는 것을 기본으로 합니다.</p></div>
-<div class="promise"><h3>한결주택관리의 약속</h3><ul class="checklist">
-<li><span class="check">✓</span>작업 전 범위와 비용을 먼저 협의합니다.</li>
-<li><span class="check">✓</span>현장 상태를 확인하고 필요한 일을 설명합니다.</li>
-<li><span class="check">✓</span>추가 작업은 사전 동의 후 진행합니다.</li>
-<li><span class="check">✓</span>정기관리 여부와 방문 주기는 건물 상황에 맞춰 협의합니다.</li>
-</ul></div>
-</div></section>
-<section id="process"><div class="wrap">
-<div class="section-head"><div class="eyebrow">HOW IT WORKS</div><h2>상담부터 작업까지 간단하게.</h2><p>건물 위치와 필요한 내용을 알려주시면 가능한 일정과 작업 범위를 함께 정합니다.</p></div>
-<div class="steps">
-<div class="step"><b>01. 문의 및 상황 확인</b><p>건물 유형, 위치, 필요한 관리 내용을 확인합니다.</p></div>
-<div class="step"><b>02. 현장 확인 및 견적</b><p>필요 시 현장을 확인하고 작업 범위와 비용을 협의합니다.</p></div>
-<div class="step"><b>03. 작업 및 결과 안내</b><p>합의한 범위대로 작업하고 추가 조치가 필요하면 안내합니다.</p></div>
-</div></div></section>
-<section class="contact" id="contact"><div class="wrap contact-grid">
-<div><div class="eyebrow" style="color:#d8e7c7">CONTACT HANGYEOL</div><h2>관리할 건물이 있으신가요?</h2><p>원룸·다가구주택 관리 상담을 환영합니다.<br>건물 위치와 필요한 작업을 알려주세요.</p><div class="smallprint">상담 가능 지역 및 실제 제공 서비스는 문의 시 확인해 주세요.</div></div>
-<div class="actions"><a class="btn" href="tel:01051895554">전화 상담 010-5189-5554</a><a class="btn" href="sms:01051895554">문자 문의하기</a></div>
-</div></section>
-</main>
-<footer><div class="wrap foot">
-<div><strong>한결주택관리</strong><br>원룸·다가구주택 건물관리</div>
-<div>상담 가능 지역 및 서비스 범위는 문의 시 확인해 주세요.<br>© 2026 HANGYEOL Housing Management.</div>
-</div></footer>
-</body>
-</html>
+<section class="about" id="about"><div class="wrap about-grid"><img class="about-photo" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="정돈된 주거 공간과 건물 관리 이미지"><div><div class="kicker">WHY HANGYEOL</div><h2>보이지 않는 곳까지<br>살피는 관리가 중요합니다.</h2><p>건물 관리는 문제가 생긴 뒤 처리하는 것만이 아닙니다. 작은 이상을 확인하고, 필요한 조치를 임대인에게 명확하게 공유하는 과정이 중요합니다.</p><ul class="checks"><li>현장 상태를 직접 확인</li><li>필요한 사항을 이해하기 쉽게 전달</li><li>건물 여건에 맞는 관리 범위 협의</li></ul><a class="btn btn-gold" href="tel:01051895554">관리 상담 문의</a></div></div></section>
+<section id="process"><div class="wrap"><div class="section-head"><div class="kicker">HOW WE WORK</div><h2>상담부터 관리까지, 네 단계</h2><p>관리 범위를 먼저 확인하고, 협의한 내용에 따라 진행합니다.</p></div><div class="process"><div class="step"><b>STEP 01</b><h3>상담 및 현황 파악</h3><p>건물 유형과 현재 관리 고민을 확인합니다.</p></div><div class="step"><b>STEP 02</b><h3>현장 확인</h3><p>필요한 경우 현장을 살펴 관리 항목을 정리합니다.</p></div><div class="step"><b>STEP 03</b><h3>관리 범위 협의</h3><p>업무 범위와 진행 방법을 구체적으로 협의합니다.</p></div><div class="step"><b>STEP 04</b><h3>관리 진행 및 공유</h3><p>합의한 범위에 따라 관리하고 주요 사항을 공유합니다.</p></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><div class="eyebrow">CONTACT HANGYEOL</div><h2>우리 건물에 맞는 관리 방법,<br>편하게 상담하세요.</h2><p>다가구주택 · 원룸 · 임대 및 현장 관리 상담</p></div><div><a class="phone" href="tel:01051895554">010-5189-5554</a><br><a class="btn btn-gold" href="tel:01051895554">전화로 상담하기</a></div></div></section>
+</main><footer><div class="wrap"><div><strong>한결주택관리</strong> · 믿고 맡기는 주택관리</div><div>상담 전화 010-5189-5554</div></div></footer>
+</body></html>
